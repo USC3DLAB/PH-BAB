@@ -137,7 +137,6 @@ void Simulator::simulate ()
 	double obj_val = 0;
 	for (int s=0; s<prob->nb_scen; s++)	{
 		obj_val	+= prob->sceProb[s] * obj_vals[s];
-		cout << obj_vals [s] << endl;
 	}
 
 	cout << "Objective value= " << setprecision(4) << fixed << obj_val << endl;
@@ -155,7 +154,7 @@ void Simulator::optimize_subproblem_as_mip (int s)
 		
 	bool status = prob->solve(thread_no);
 	
-	if ((s+1)%5 == 0)	{ cout << "* Scenario " << s+1 << " is solved..." << endl; }
+//	if ((s+1)%5 == 0)	{ cout << "* Scenario " << s+1 << " is solved..." << endl; }
 	
 	if (status)	{
 		obj_vals[s]	= prob->getObjValue(thread_no);
@@ -199,7 +198,7 @@ void Simulator::simulate ()
 		obj_val	+= prob->sceProb[s] * obj_vals[s];
 	}
 	
-	cout << "Objective value= " << setprecision(4) << fixed << obj_val << endl;
+	cout << "Simulated objective value= " << setprecision(4) << fixed << obj_val << endl;
 	cout << "Simulation is completed [" << setprecision(1) << fixed << get_wall_time() - start_time << "s]" << endl;
 }
 
