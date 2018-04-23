@@ -21,6 +21,9 @@
 #define PHBB_RelOptTol			1e-4		// tolerance for relative optimality checks
 #define PHBB_AbsOptTol			1e-6		// tolerance for absolute optimality checks
 
+#define PHBB_MIPRelOptTol		1e-4		// relative optimality tolerance for MIP solves
+#define	PHBB_MIPAbsOptTol		1e-6		// absolute optimality tolerance for MIP solves 
+
 #define PHBB_NormTol			1e-1
 #define PHBB_NodeRelOptTol		1e-6
 #define PHBB_NodeItrLim			1
@@ -28,8 +31,15 @@
 
 #define PHBB_rho				100
 
-#define PHBB_RecourseLB			-1e6		// lower bound on the recourse objective value
-
 #define PHBB_TiLim				3600		// time limit
+
+#define PHBB_Parallel						// comment out if serial implementation is desired
+
+#ifdef PHBB_Parallel
+#include <boost/thread/thread.hpp>
+#define PHBB_Threads			boost::thread::hardware_concurrency();
+#else 
+#define PHBB_Threads			1
+#endif
 
 #endif
