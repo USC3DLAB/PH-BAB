@@ -3,7 +3,7 @@
 
 **Cite as:** Atakan, S., & Sen, S. (2018). A Progressive Hedging Based Branch-and-Bound Algorithm for Mixed-Integer Stochastic Programs. Available via Optimization Online.
 
-**Introduction:** The PH-BAB algorithm can address multi-stage stochastic mixed-integer convex programs. The algorithm is described in Atakan & Sen (2018). This repository is the implementation of the algorithms described in Section 4 of that paper. The code is written in C++, and depends CPLEX & Concert Technology. Further assumptions (some of which are not necessary, but speeded up the coding of the algorithm) are listed below.   
+**Introduction:** The PH-BAB algorithm can address multi-stage stochastic mixed-integer convex programs. The algorithm is described in Atakan & Sen (2018). This repository is the implementation of the algorithms described in Section 4 of that paper. The code is written in C++, and depends on CPLEX & Concert Technology. Further assumptions (some of which are not necessary, but speeded up the coding of the algorithm) are listed below.   
 
 **Assumptions:**
 - Solves two-stage stochastic mixed-integer programs
