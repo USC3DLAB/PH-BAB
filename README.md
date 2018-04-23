@@ -40,3 +40,11 @@ Solve sslp_5_50_100, and simulate optimal 1st-stage solution using SSLP_5_50_200
 ```
 ./ph-bb -f sslp_5_50_100 -s sslp_5_50_2000
 ```
+
+Solve the entire SSLP dataset:
+```
+for f in ../datasets/sslp/*.cor; do
+  probname=${f%.cor};
+  ./ph-bb -f "$probname";
+done
+```
