@@ -1,7 +1,7 @@
 # phbab
 ## Progressive-Hedging Based Branch-and-Bound Algorithm (PH-BAB)
 
-**Cite as:** Atakan, S., & Sen, S. (2018). A Progressive Hedging Based Branch-and-Bound Algorithm for Mixed-Integer Stochastic Programs. Available via Optimization Online.
+**Cite as:** Atakan, S., & Sen, S. (2018). A Progressive Hedging Based Branch-and-Bound Algorithm for Mixed-Integer Stochastic Programs. Computational Management Science 15 (3-4), 501-540.
 
 This software is distributed for academic and non-profit use. Please see the license file for copyright details, and contact the authors for commercial use.
 
